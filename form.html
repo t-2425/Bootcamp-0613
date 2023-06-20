@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <h1>From</h1>
+
+    <from action="" method="get">
+        <label for="fullname">Full Name</label>
+        <input type="text" name="fullname" id="fullname">
+
+        <input type="submit" name="btn_submit" value="send">
+    </from>
+
+    <hr>
+    <h2>Register Form</h2>
+    <from action="" method="get">
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" placeholder="John" required>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" placeholder="Doe" required>
+
+        <label for="user-password">Password</label>
+        <input type="password" name="user-password" id="user-password">
+
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="18" max="60" placeholder="applicable is 18 up to 60">
+
+        <label for="user-email">Email</label>
+        <input type="email" name="user-email" id="user-email" place holder="your_email_name@gmail.com">
+
+        <label for="bday">Birth Date:</label>
+        <input type="date" name="birthday" id="bday">
+
+        <div>
+            <p>Please choose your favorite music genre</p>
+
+            <input type="radio" name="genre" id="rock" value="rock">
+            <label for="rock">Rock</label>
+
+            <input type="radio" name="genre" id="pop" value="pop">
+            <label for="pop">Pop</label>
+
+            <input type="radio" name="genre" id="jazz" value="jazz">
+            <label for="jazz">Jazz</label>
+        </div>
+
+        <div>
+            <p>Please choose your faverite food</p>
+            
+            <input type="checkbox" name="food" id="ramen" value="ramen">
+            <label for="ramen">Ramen</label>
+
+            <input type="checkbox" name="food" id="sushi" value="sushi">
+            <label for="sushi">Sushi</label>
+
+            <input type="checkbox" name="food" id="curry" value="curry">
+            <label for="curry">Curry</label>
+        </div>
+        
+        
+        <div>
+            <label for="device">what is your device?</label>
+            <select name="device" id="device">
+                <option value="macbook">Macbook</option>
+                <option value="ipad">ipad</option>
+                <option value="iphone">iphone</option>
+            </select>
+
+        </div>
+        <hr>
+        <div>
+            <label for="device">what is your device? choose multiple</label>
+            <select name="device" id="device" multiple>
+                <option value="macbook">Macbook</option>
+                <option value="ipad">ipad</option>
+                <option value="iphone">iphone</option>
+            </select>
+
+        </div>
+        <hr>
+        <label for="photo">Upload your photo:</label>
+        <input type="file" name="photo" id="photo">
+
+        <hr>
+        <label for="">Write your comment:</label>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+
+        <input type="submit" name="btn_submit" value="send">
+
+        <botton type="submit" name="send">Enter</botton>
+
+    </from>
+</body>
+</html>
